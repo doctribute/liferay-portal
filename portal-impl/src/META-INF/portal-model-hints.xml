@@ -922,12 +922,8 @@
 		<field name="reminderQueryQuestion" type="String" />
 		<field name="reminderQueryAnswer" type="String" />
 		<field name="graceLoginCount" type="int" />
-		<field name="screenName" type="String">
-			<validator name="required" />
-		</field>
-		<field name="emailAddress" type="String">
-			<validator name="email" />
-		</field>
+		<field name="screenName" type="String" />
+		<field name="emailAddress" type="String" />
 		<field name="facebookId" type="long" />
 		<field name="ldapServerId" type="long" />
 		<field name="openId" type="String">
@@ -944,9 +940,7 @@
 			<hint-collection name="TEXTAREA" />
 			<hint name="display-width">400</hint>
 		</field>
-		<field name="firstName" type="String">
-			<validator name="required" />
-		</field>
+		<field name="firstName" type="String" />
 		<field name="middleName" type="String" />
 		<field name="lastName" type="String" />
 		<field name="jobTitle" type="String">
@@ -2058,11 +2052,9 @@
 		<field name="parentMessageId" type="long" />
 		<field name="subject" type="String">
 			<sanitize content-type="text/plain" modes="ALL" />
-			<validator name="required" />
 		</field>
 		<field name="body" type="String">
 			<hint-collection name="CLOB" />
-			<validator name="required" />
 		</field>
 		<field name="format" type="String" />
 		<field name="anonymous" type="boolean" />
